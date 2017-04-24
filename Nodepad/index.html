@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务记事本</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/store.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+<!--1.名字-->
+<div class="name">
+    <p></p>
+</div>
+<!--2.返回顶部-->
+<div class="back_top"></div>
+
+<!--3.头部图片-->
+<div class="logo">
+    <img src="images/logo.jpg" alt="">
+</div>
+<!--4.导航部分-->
+<div class="nav">
+    <div class="nav_content">
+        <div class="nav_left">
+            <img src="images/logo.jpg" alt="">
+        </div>
+        <div class="nav_right">
+            <input type="text" placeholder="请输入记录事项">
+            <input type="submit" value="添加">
+        </div>
+    </div>
+
+</div>
+<!--5.内容部分-->
+<div class="content">
+    <div class="content_top">
+        <ul>
+            <li class="curr">待办事项</li>
+            <li>完成事项</li>
+        </ul>
+    </div>
+    <div class="content_bottom active">
+        <ul class="task">
+            <!--<li>
+                <input type="checkbox">
+                <span>abc</span>
+                <span class="del">删除</span>
+                <span class="detail">详情</span>
+            </li>-->
+
+        </ul>
+    </div>
+    <div class="content_bottom">
+        <ul class="finish_task">
+
+        </ul>
+    </div>
+</div>
+<!--6.详情部分-->
+<div class="mask">
+    <div class="detail_content">
+        <div class="top">
+            <span class="detail_title"></span>
+            <span class="close">关闭</span>
+        </div>
+        <div class="bottom">
+            <textarea></textarea>
+            提醒时间<input id="remain_time" type="text">
+            <button>更新</button>
+        </div>
+
+    </div>
+</div>
+<!--7.音频提醒时间-->
+<audio src="bell.mp3"></audio>
+
+</body>
+</html>
